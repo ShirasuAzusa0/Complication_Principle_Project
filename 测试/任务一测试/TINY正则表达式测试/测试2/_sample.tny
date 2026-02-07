@@ -1,0 +1,21 @@
+{ 这是一个简单的Tiny语言示例程序 }
+{ 主程序开始 }
+read n ;
+sum := 0 ;
+i := 1 ;
+
+{ 输出结果 }
+write sum ;
+
+{ 判断n是否为偶数 }
+if n % 2 = 0 then
+    write 0
+else
+    write 1
+end ;
+
+{ 另一个循环示例 }
+repeat
+    n := n - 1 ;
+    write n
+until n = 0

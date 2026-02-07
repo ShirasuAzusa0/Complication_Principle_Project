@@ -1,0 +1,4 @@
+digit=[0-9]
+letter=[a-zA-Z]
+_FLOAT100=digit+.digit+
+_ID200=letter(letter|digit)*

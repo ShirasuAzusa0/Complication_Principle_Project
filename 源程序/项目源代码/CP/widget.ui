@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_1">
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>40</y>
+         <width>361</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>袁知本 计科2班 20232131006</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>2</y>
+         <width>343</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>23</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>编译原理课程设计任务一</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_SaveRegex">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>200</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>导出正则表达式</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>991</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LoadRegex">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>140</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>导入正则表达式</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>输入/载入正则表达式：</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Help">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>80</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>查看规则与使用说明</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>分析生成结果查看：</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>481</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LoadLEXFile">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>650</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>查看lex文件</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Analyse">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>350</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>开始分析</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ShowMinDFA">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>530</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DFA最小化</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ShowNFA">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>410</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>NFA生成</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GenerateCode">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>590</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>词法分析程序生成</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ShowDFA">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>470</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DFA生成</string>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="commandLinkButton">
+       <property name="geometry">
+        <rect>
+         <x>1090</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>转向任务二</string>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1221</width>
+         <height>711</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>270</y>
+         <width>491</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>此处将会显示结果</string>
+       </property>
+      </widget>
+      <zorder>graphicsView_1</zorder>
+      <zorder>label_2</zorder>
+      <zorder>label</zorder>
+      <zorder>pushButton_SaveRegex</zorder>
+      <zorder>plainTextEdit_2</zorder>
+      <zorder>pushButton_LoadRegex</zorder>
+      <zorder>label_4</zorder>
+      <zorder>pushButton_Help</zorder>
+      <zorder>label_3</zorder>
+      <zorder>tableWidget</zorder>
+      <zorder>pushButton_LoadLEXFile</zorder>
+      <zorder>pushButton_Analyse</zorder>
+      <zorder>pushButton_ShowMinDFA</zorder>
+      <zorder>pushButton_ShowNFA</zorder>
+      <zorder>pushButton_GenerateCode</zorder>
+      <zorder>pushButton_ShowDFA</zorder>
+      <zorder>commandLinkButton</zorder>
+      <zorder>plainTextEdit</zorder>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>40</y>
+         <width>341</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>袁知本 计科2班 20232131006</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>0</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>23</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>编译原理课程设计任务二</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>72</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>文法载入编辑</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Help_1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>查看输入规则</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LoadGrammar">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>90</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>打开</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_SaveGrammar">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>261</width>
+         <height>111</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>72</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lex载入编辑</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_SaveProgram">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>260</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LoadProgram">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>打开</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>261</width>
+         <height>71</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GetFollowSet">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>540</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>求解</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>570</y>
+         <width>261</width>
+         <height>131</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>370</y>
+         <width>78</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First集合求解</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>400</y>
+         <width>261</width>
+         <height>131</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GetFirstSet">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>370</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>求解</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>540</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Follow集合求解</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GenLR0DFA">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>70</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LR(0)DFA生成</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>130</y>
+         <width>501</width>
+         <height>151</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>320</y>
+         <width>501</width>
+         <height>381</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>880</x>
+         <y>70</y>
+         <width>60</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>语法树生成</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Interlanguage">
+       <property name="geometry">
+        <rect>
+         <x>950</x>
+         <y>70</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>代码生成</string>
+       </property>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="geometry">
+        <rect>
+         <x>796</x>
+         <y>99</y>
+         <width>421</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>使用说明</string>
+        </attribute>
+        <widget class="QPlainTextEdit" name="plainTextEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string>本模块用于可视化语法树构建和中间代码生成，具体步骤如下：
+1. 先在本系统的左侧的文法模块中输入文法
+2. 再在本系统的左侧的句子模块中输入该文分对应的测试源代码
+3. 完成以上步骤后，点击代码生成，即可进行中间代码生成；点击可视化语法树，可以实现语法树构建，可分别通过点击上面“代码生成”和“语法树展示”按钮查看。</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>代码生成</string>
+        </attribute>
+        <widget class="QPlainTextEdit" name="codeText">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>571</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>语法树展示</string>
+        </attribute>
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>421</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="headerHidden">
+          <bool>true</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>树形结构</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ShowSyntaxTree">
+       <property name="geometry">
+        <rect>
+         <x>1030</x>
+         <y>70</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>可视化语法树</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GenLR1DFA">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>100</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LR(1)DFA生成</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_LR1Analyse">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>100</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LR(1)分析表生成</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_AnalyseSentence">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>100</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>源代码分析</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_SLR1Analyse">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>70</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SLR(1)文法分析</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>100</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>文法分析</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Help_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>70</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>查看分析说明</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>290</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>分析结果表</string>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="commandLinkButton_2">
+       <property name="geometry">
+        <rect>
+         <x>1090</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>转向任务一</string>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1221</width>
+         <height>711</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>graphicsView_2</zorder>
+      <zorder>label_5</zorder>
+      <zorder>label_6</zorder>
+      <zorder>label_7</zorder>
+      <zorder>pushButton_Help_1</zorder>
+      <zorder>pushButton_LoadGrammar</zorder>
+      <zorder>pushButton_SaveGrammar</zorder>
+      <zorder>plainTextEdit_3</zorder>
+      <zorder>label_18</zorder>
+      <zorder>pushButton_SaveProgram</zorder>
+      <zorder>pushButton_LoadProgram</zorder>
+      <zorder>plainTextEdit_11</zorder>
+      <zorder>pushButton_GetFollowSet</zorder>
+      <zorder>tableWidget_4</zorder>
+      <zorder>label_8</zorder>
+      <zorder>tableWidget_3</zorder>
+      <zorder>pushButton_GetFirstSet</zorder>
+      <zorder>label_9</zorder>
+      <zorder>pushButton_GenLR0DFA</zorder>
+      <zorder>plainTextEdit_4</zorder>
+      <zorder>tableWidget_2</zorder>
+      <zorder>label_11</zorder>
+      <zorder>pushButton_Interlanguage</zorder>
+      <zorder>tabWidget</zorder>
+      <zorder>pushButton_ShowSyntaxTree</zorder>
+      <zorder>pushButton_GenLR1DFA</zorder>
+      <zorder>pushButton_LR1Analyse</zorder>
+      <zorder>pushButton_AnalyseSentence</zorder>
+      <zorder>pushButton_SLR1Analyse</zorder>
+      <zorder>label_10</zorder>
+      <zorder>pushButton_Help_2</zorder>
+      <zorder>label_12</zorder>
+      <zorder>commandLinkButton_2</zorder>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

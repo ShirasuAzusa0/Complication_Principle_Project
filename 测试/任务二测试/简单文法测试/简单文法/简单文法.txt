@@ -1,0 +1,5 @@
+program | TOKEN
+FLOAT | ID
+program -> TOKEN
+TOKEN -> FLOAT
+TOKEN -> ID

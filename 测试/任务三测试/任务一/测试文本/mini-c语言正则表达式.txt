@@ -1,0 +1,8 @@
+digit=[0-9]
+letter=[a-zA-Z]
+_key100S=else|if|int|float|double|return|void|do|while
+_special200S=\+\|-|\*\|/|%|<|<=|>=|>|==|!=|=|;|,|\(\|\)\|\[\|\]\|{|}
+_specialName200S=PLUS|MINUS|MULTIPLY|DIVIDE|MOD|LT|LTEQ|RTEQ|RT|EQ|NE|ASSIGN|SEMI|DOU|LLM|RLM|LMM|RMM|LBM|RBM
+_ID400=(_|letter)(_|letter|digit)*
+_NUMBER500=digit+(.digit+)?
+_annotation600=//~\n

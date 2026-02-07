@@ -1,0 +1,8 @@
+digit=[0-9]
+letter=[a-zA-Z]
+_key100S=if|then|else|end|repeat|until|read|write
+_special200S=\+\|-|\*\|/|%|<|<>|<=|>=|>|=|;|:=|\(\|\)\
+_specialName200S=PLUS|MINUS|MULTIPLY|DIVIDE|MOD|LT|NE|LTEQ|RTEQ|RT|EQ|SEMI|ASSIGN|LPAN|RPAN
+_ID400=letter(letter|digit)*
+_NUMBER500=digitdigit*
+_annotation600={~}

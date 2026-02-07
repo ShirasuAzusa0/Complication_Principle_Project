@@ -1,0 +1,31 @@
+// 条件判断程序
+int max ( int x, int y ) {
+    if ( x > y ) {
+        return x ;
+    } else {
+        return y ;
+    }
+}
+
+int x ;
+int fact ;
+double y ;
+int arr [ 100 ] ;
+void test ( int a , int b )
+{
+  a = 1 ;
+  b = 2 ;
+  return ;
+}
+void main ( void )
+{
+  x = 2 ;
+  y = 3 ;
+  if ( x > 1 )
+      do 
+          fact = fact * x ;
+      while ( fact >= 1 ) ;
+  else
+    x = 1 ;
+  return ;
+}
