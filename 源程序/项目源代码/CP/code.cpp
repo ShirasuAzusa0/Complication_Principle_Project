@@ -127,7 +127,7 @@ QString GenerateCode::generateCode(QString filePath) {
 
     // 1. 关键字宏定义 - 从关键词key序列获取
     auto key_it = sequenceEncodings.lower_bound("_key");
-    if (key_it != sequenceEncodings.end()) {
+    if (key_it != sequenceEncodings.end() && key_it->first.rfind("_key", 0) == 0) {
         for (const auto& item : key_it->second) {
             string keyword = item.first;
             int encoding = item.second;
@@ -140,7 +140,9 @@ QString GenerateCode::generateCode(QString filePath) {
     auto special_it = sequenceEncodings.lower_bound("_special");
     auto specialName_it = sequenceEncodings.lower_bound("_specialName");
 
-    if (special_it != sequenceEncodings.end() && specialName_it != sequenceEncodings.end()) {
+    if (special_it != sequenceEncodings.end() && specialName_it != sequenceEncodings.end() &&
+            special_it->first.rfind("_special", 0) == 0 &&
+            specialName_it->first.rfind("_specialName", 0) == 0) {
         const auto& special_items = special_it->second;
         const auto& specialName_items = specialName_it->second;
 
@@ -157,7 +159,7 @@ QString GenerateCode::generateCode(QString filePath) {
 
     // 输出关键字表 - 直接从关键词序列获取，确保编码正确
     lexCode += "static struct { const char* keyword; int encoding; } keywordTable[] = {\n";
-    if (key_it != sequenceEncodings.end()) {
+    if (key_it != sequenceEncodings.end() && key_it->first.rfind("_key", 0) == 0) {
         for (const auto& item : key_it->second) {
             string keyword = item.first;
             int encoding = item.second;
@@ -168,7 +170,7 @@ QString GenerateCode::generateCode(QString filePath) {
 
     // 输出操作符表 - 直接从操作符 special 序列获取并清理转义字符
     lexCode += "static struct { const char* op; int encoding; } operatorTable[] = {\n";
-    if (special_it != sequenceEncodings.end()) {
+    if (special_it != sequenceEncodings.end() && special_it->first.rfind("_special", 0) == 0) {
         for (const auto& item : special_it->second) {
             string op = item.first;
             int encoding = item.second;
